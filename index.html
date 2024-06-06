@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Wallet Connection and Token Transfer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Connect to MetaMask</h1>
+        <button id="connectButton">Connect Wallet</button>
+        <p id="walletAddress"></p>
+
+        <h2>Transfer Imagine Token</h2>
+        <select id="networkSelect">
+            <option value="Ethereum">Ethereum</option>
+            <option value="BSC">Binance Smart Chain</option>
+            <option value="Solana">Solana</option>
+        </select>
+        <input type="text" id="recipientAddress" placeholder="Recipient Address">
+        <input type="number" id="tokenAmount" placeholder="Amount">
+        <button id="transferButton">Transfer Tokens</button>
+        <p id="transferStatus"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
